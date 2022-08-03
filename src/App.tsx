@@ -1,13 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
-import './App.css';
+
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
 
 function App() {
   return (
     <div className="App">
+      <Stack direction="row" spacing={1}>
+        <Chip label="Chip Filled" />
+        <Chip label="Chip Outlined" variant="outlined" />
+      </Stack>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
